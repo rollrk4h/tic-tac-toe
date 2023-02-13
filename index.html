@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Caveat|Indie+Flower"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>MinMax TicTacToe</title>
+  </head>
+  <body>
+    <div id="jatek">
+      <div id="intro_szoveg">
+        <h1 class="main_szoveg animate__animated animate__backInDown">
+          Szerinted le tudod győzni a gépet?
+        </h1>
+        <br />
+        <h1
+          class="animate__animated animate__bounceIn animate__delay-1s al_al_main_szoveg"
+          al_main_szoveg
+        >
+          (O - játékos, X - gép )
+        </h1>
+      </div>
+      <div
+        class="container animate__animated animate__rotateIn animate__delay-2s"
+      >
+        <div class="grid">
+          <div style="border-bottom: 3px solid black" class="cell" id="0"></div>
+          <div
+            style="
+              border-left: 3px solid black;
+              border-right: 3px solid black;
+              border-bottom: 3px solid black;
+            "
+            class="cell"
+            id="1"
+          ></div>
+          <div style="border-bottom: 3px solid black" class="cell" id="2"></div>
+          <div style="border-bottom: 3px solid black" class="cell" id="3"></div>
+          <div
+            style="
+              border-left: 3px solid black;
+              border-right: 3px solid black;
+              border-bottom: 3px solid black;
+            "
+            class="cell"
+            id="4"
+          ></div>
+          <div style="border-bottom: 3px solid black" class="cell" id="5"></div>
+          <div class="cell" id="6"></div>
+          <div
+            style="border-left: 3px solid black; border-right: 3px solid black"
+            class="cell"
+            id="7"
+          ></div>
+          <div class="cell" id="8"></div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <select
+        id="difficulty"
+        class="animate__animated animate__zoomIn animate__delay-3s"
+      >
+        <option value="easy">Könnyű</option>
+        <option value="medium">Közepes</option>
+        <option value="hard">Nehéz</option>
+      </select>
+      <div id="eredmenyek">
+        <div
+          class="kontainer animate__animated animate__bounceIn animate__delay-3s"
+        >
+          <div class="column-center">
+            <span>Játékos győzelem:</span>
+            <div class="ember_win"></div>
+          </div>
+          <div class="column-left">
+            <span>Gép győzelem:</span>
+            <div class="gep_win"></div>
+          </div>
+          <div class="column-right">
+            <span>Döntetlen:</span>
+            <div class="dontetlen"></div>
+          </div>
+        </div>
+      </div>
+      <div class="endgame animate__animated animate__zoomIn">
+        <div class="text"></div>
+        <button onclick="startGame()">Új játék kezdése</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

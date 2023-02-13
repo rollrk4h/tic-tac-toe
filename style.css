@@ -1,0 +1,171 @@
+td {
+  border: 2px solid #333;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+select {
+  background: darkgrey;
+  border: 3px solid grey;
+  border-radius: 10px;
+  height: 65px;
+  font-size: 42px;
+  font-family: "Caveat";
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  color: #000;
+}
+
+option {
+  background: darkgrey;
+  color: #000;
+  font-size: 28px;
+  font-family: "Caveat";
+}
+
+table {
+  border-collapse: collapse;
+  position: relative;
+  left: 50%;
+  margin-left: -155px;
+  top: 50px;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+.endgame {
+  display: none;
+  width: 100%;
+  position: absolute;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  font-family: "Caveat";
+}
+
+.container {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  grid-gap: 0px;
+}
+
+.cell {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Indie Flower";
+  font-size: 3rem;
+  font-weight: bold;
+  background: none;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+#intro_szoveg {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+#intro_szoveg .main_szoveg {
+  font-family: "Caveat";
+  font-size: 52px;
+  text-align: center;
+}
+
+#intro_szoveg .al_main_szoveg {
+  font-family: "Caveat";
+  font-size: 52px;
+  text-align: center;
+}
+
+#intro_szoveg .al_al_main_szoveg {
+  font-family: "Caveat";
+  font-size: 38px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(228, 228, 228);
+}
+
+button {
+  background: darkgrey;
+  border: 3px solid grey;
+  border-radius: 10px;
+  height: 65px;
+  color: #000;
+  font-size: 42px;
+  font-family: "Caveat";
+}
+
+.text {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+#eredmenyek {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Caveat";
+}
+
+.kontainer {
+  position: relative;
+  width: 100%;
+}
+.kontainer div {
+  height: 300px;
+}
+
+.column-left {
+  width: 33%;
+  left: 0;
+  position: absolute;
+}
+.column-center {
+  width: 34%;
+  margin-left: 33%;
+  position: absolute;
+}
+.column-right {
+  width: 33%;
+  right: 0;
+  position: absolute;
+}
